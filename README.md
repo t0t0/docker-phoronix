@@ -11,7 +11,7 @@ For ease of use, a couple of 'make commands' are supplied within this repo.`
 
 After cloning the repository, just execute these commands:
 
-#### Building the Docker image  
+#### Building the docker-phoronix image  
 
 ```
 $ make bench_deploy
@@ -27,4 +27,4 @@ This will run the container together with the supplied script. The script return
 
 ![alt text](img/docker-phoronix.png "Menu")
 
-After you exit from this menu, the docker-bench container will be automatically removed.
+After you exit from this menu, the docker-phoronix container will be automatically removed.
