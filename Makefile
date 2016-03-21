@@ -1,8 +1,8 @@
 bench_build:
-	@docker build -t docker-bench -f Dockerfile .
+	@docker build -t docker-phoronix -f Dockerfile .
 
 bench_run:
-	@docker run -i --name docker-bench docker-bench 
+	@docker run -i --name docker-phoronix docker-phoronix 
 
 bench_cleanup_image:
 	@echo "Removing old image..."
