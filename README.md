@@ -28,3 +28,5 @@ This will run the container together with the supplied script. The script return
 ![alt text](img/docker-phoronix.png "Menu")
 
 After you exit from this menu, the docker-phoronix container will be automatically removed.
+
+NOTE: Don't use CTRL+C to exit the make command. This could result in the script being stuck in a loop and you will have to kill and remove the container manually. 
