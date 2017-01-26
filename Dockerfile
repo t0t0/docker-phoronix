@@ -11,7 +11,7 @@ FROM    alpine
 MAINTAINER Toon Lamberigts and Tomas Vercautter
 
 # Install dependencies
-RUN apk update && apk add --no-cache make gcc g++ libtool linux-headers perl pcre-dev php php-dom php-zip php-json
+RUN apk update && apk add --no-cache make gcc g++ libtool linux-headers perl pcre-dev php5 php5-dom php5-zip php5-json
 
 # Download  & extract Phoronix package
 RUN wget http://www.phoronix-test-suite.com/download.php?file=phoronix-test-suite-6.2.2 -O phoronix-test-suite-6.2.2.tar.gz
