@@ -14,10 +14,10 @@ ARG PHORONIX_VERSION
 RUN apk update && apk add --no-cache make gcc g++ libtool linux-headers perl pcre-dev php5 php5-dom php5-zip php5-json wget
 
 # Download  & extract Phoronix package
-RUN wget http://www.phoronix-test-suite.com/download.php?file=phoronix-test-suite-${PHORONIX_VERSION} -O phoronix-test-suite.tar.gz
+RUN wget https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v${PHORONIX_VERSION}.tar.gz -O phoronix-test-suite.tar.gz
 RUN tar xzf phoronix-test-suite.tar.gz
 RUN rm -f phoronix-test-suite.tar.gz
-RUN cd phoronix-test-suite && ./install-sh
+RUN cd phoronix-test-suite-${PHORONIX_VERSION} && ./install-sh
 
 # Install predefined tests
 ## Disk
